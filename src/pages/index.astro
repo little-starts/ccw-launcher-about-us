@@ -8,24 +8,23 @@ import { Testimonials } from '../components/Testimonials.jsx'
 import { FeaturesDiagonal } from '../components/FeaturesDiagonal.jsx'
 
 import { FAQ } from '../components/FAQ.jsx'
-import { Brands } from '../components/Brands.jsx'
 import { Blog } from '../components/Blog'
-import { Footer } from '../components/Footer.jsx'
+
 import { ScrollUpButton } from '../components/ScrollUpButton'
 import '../styles/Theme.css'
 import '../styles/Diagonals.css'
 ---
 
-<Layout title="Tailcast">
+<Layout title="共创世界启动器">
   <Navbar client:load />
   <Hero client:load />
+  <FeaturesDiagonal client:load />
   <Features1 client:load />
   <Features2 client:load />
-  <FeaturesDiagonal client:load />
-  <Brands client:load />
+  
   <Testimonials client:load />
   <Blog client:load />
   <FAQ client:load /> 
-  <Footer />
+
   <ScrollUpButton client:load />
 </Layout>

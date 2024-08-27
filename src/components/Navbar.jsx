@@ -5,11 +5,11 @@ import { TailcastLogo } from "../assets/logos/TailcastLogo";
 import { GithubIcon } from "../assets/icons/GithubIcon";
 
 const navbarLinks = [
-  { label: "Home", href: "/#home", ariaLabel: "Home" },
-  { label: "Features", href: "/#features", ariaLabel: "Features" },
-  { label: "Pricing", href: "/#pricing", ariaLabel: "Pricing" },
-  { label: "Feedback", href: "/#feedback", ariaLabel: "Feedback" },
-  { label: "FAQ", href: "/#FAQ", ariaLabel: "FAQ" },
+  { label: "首页", href: "/#home", ariaLabel: "Home" },
+  { label: "特点", href: "/#features", ariaLabel: "Features" },
+  { label: "用户评价", href: "/#user-feedback", ariaLabel: "Feedback" },
+  { label: "开发日志", href: "/#devlog", ariaLabel: "Devlog" },
+  { label: "问题解答", href: "/#FAQ", ariaLabel: "FAQ" },
 ];
 
 export const Navbar = () => {
@@ -33,7 +33,7 @@ export const Navbar = () => {
                 <TailcastLogo />
               </div>
               <div className="text-white font-['Inter'] font-bold text-xl">
-                Tailcast
+                共创世界启动器
               </div>
             </div>
           </a>
@@ -67,12 +67,12 @@ export const Navbar = () => {
             <a
               className="text-white main-border-gray rounded-xl
            bg-bgDark2 hover:bg-bgDark3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-              href="https://github.com/matt765/Tidestream"
+              href="https://github.com/little-starts/ccw-launcher-V2"
               target="_blank"
-              aria-label="source code"
+              aria-label="查看源代码"
             >
               <GithubIcon />
-              <span className="pt-px">Source code</span>
+              <span className="pt-px">查看源代码</span>
             </a>
           </div>
         </motion.div>
@@ -112,11 +112,11 @@ export const Navbar = () => {
               ))}
               <a
                 className="outlined-button pl-6 pr-8 pt-2 pb-2  flex"
-                href="https://github.com/matt765/Tidestream"
+                href="https://github.com/little-starts/ccw-launcher-V2"
                 target="_blank"
               >
                 <GithubIcon />
-                Source code
+                查看源代码
               </a>
             </div>
           </motion.div>

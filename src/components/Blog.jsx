@@ -6,25 +6,25 @@ import blog3 from "../assets/images/blog3.png";
 
 const blogData = [
   {
-    title: "AI and Machine Learning",
+    title: "共创世界启动器 V2.0 发布",
     subtitle:
-      "Discover insights and trends in the world of data analytics. Delve into how AI and machine learning are revolutionizing industries",
+      "共创世界启动器全新版本，采用 Tauri 与 WebView2 技术栈，释放极限性能，体验更好游戏！",
     image: blog1.src,
   },
   {
-    title: "Data-Driven Analytics",
-    subtitle: "Explore the impact of AI and ML on data analytics.",
+    title: "共创世界启动器 V1.0 公开",
+    subtitle: "共创世界启动器开坑成功，WinUI 体验升级~",
     image: blog2.src,
   },
   {
-    title: "Real-Time Data Processing",
-    subtitle: "Learn about the importance of processing real-time.",
+    title: "共创世界启动器 V1.5 更新",
+    subtitle: "启动器全面升级，更流畅的性能~",
     image: blog3.src,
   },
 ];
 
 export const Blog = () => (
-  <section className="w-screen flex justify-center bg-bgDark2 relative ">
+  <section className="w-screen flex justify-center bg-bgDark2 relative " id="devlog">
     <div className="absolute -top-16" id="blog" />
     <div className="pb-0 pt-4 bg-bgDark2 2xl:w-[1200px] lg:w-[1000px] xl:w-[1150px]  ">
       <motion.div
@@ -35,12 +35,12 @@ export const Blog = () => (
       >
         <div className="container px-4 mb-20">
           <div className="max-w-2xl text-center lg:text-left mb-16 mx-auto lg:ml-0 lg:mr-0">
-            <span className="block-subtitle">Our Blog</span>
+            <span className="block-subtitle">开发日志</span>
             <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-primaryText">
-              Latest Insights
+              我们的活动！
             </h2>
             <p className="mb-6 text-secondaryText">
-              Stay updated with the latest trends and insights in our industry.
+              我们将不断更新共创世界启动器，只为创造更好的体验
             </p>
           </div>
           <div className="flex 2xl:w-[1200px] lg:w-[1000px] xl:w-[1150px] flex-wrap -mx-4 items-start h-auto sm:h-[30rem] lg:h-[31rem]  xl:h-[35rem]">

@@ -1,36 +1,36 @@
 import { motion } from "framer-motion";
 
 import { QuoteIcon } from "../assets/icons/QuoteIcon";
-import testimonial1 from "../assets/images/testimonial1.png";
+import skydoge from "../assets/images/Skydoge.png";
 import testimonial2 from "../assets/images/testimonial2.png";
 import testimonial3 from "../assets/images/testimonial3.png";
 
 const testimonialsData = [
   {
-    customerName: "John Watkins",
-    customerTitle: "Founder of Dashflow",
+    customerName: "多bug的啸天犬",
+    customerTitle: "主题教程撰写者 & Gandi 资深使用者 &Gandi 插件开发者 & Gandi 内测用户",
     content:
-      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
-    image: testimonial1,
+      "共创世界启动器 大大提升了 Gandi 的性能，相比于官方的客户端，它提供了更好的性能利用和卡顿优化，且兼容性更强，让我感到用起来很顺手！",
+    image: skydoge
   },
   {
-    customerName: "John Watkins",
-    customerTitle: "Founder of Dashflow",
+    customerName: "YK1BOY",
+    customerTitle: "主题教程撰写者 & Gandi 核心用户 & CCW人气创作者 & CCW Game Jam 主理人 ",
     content:
-      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
+      "共创世界启动器真是太好用了，共创世界的启动器是世界上最好用的启动器，启动迅速，操作简单，效果显著，白猫青天大老爷绝不会冤枉任何一个特性，也绝不会放过任何一个BUG。",
     image: testimonial2,
   },
   {
-    customerName: "John Watkins",
-    customerTitle: "Founder of Dashflow",
+    customerName: "酷可MC",
+    customerTitle: "Gandi 核心用户 & Gandi 拓展开发者 & Gandi 人气创作者 & Gandi 内测用户",
     content:
-      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
+      "",
     image: testimonial3,
   },
 ];
 
 export const Testimonials = () => (
-  <section className="w-full flex justify-center pt-16 mb-16 lg:mb-32 bg-bgDark2 relative">
+  <section className="w-full flex justify-center pt-16 mb-16 lg:mb-32 bg-bgDark2 relative" id="user-feedback">
     <div className="absolute -top-16" id="feedback" />
     <div className="flex flex-col w-full lg:w-[1150px] justify-center">
       <motion.div
@@ -39,9 +39,9 @@ export const Testimonials = () => (
         viewport={{ once: true }}
         transition={{ duration: 0.4, delay: 0.3 }}
       >
-        <div className="block-subtitle text-center mb-6">Testimonials</div>
+        <div className="block-subtitle text-center mb-6">用户评价</div>
         <div className="block-big-title text-center mb-20 px-8 sm:px-24 md:px-48">
-          People like you love Tailcast
+          听听大家怎么说
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
@@ -59,8 +59,8 @@ export const Testimonials = () => (
                   <img
                     src={testimonial.image.src}
                     alt="Customer avatar"
-                    width="45px"
-                    height="5px"
+                    width="300px"
+                    height="300px"
                     aria-label={testimonial.customerName}
                   />
                 </div>

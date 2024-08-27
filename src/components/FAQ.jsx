@@ -3,24 +3,24 @@ import { motion } from "framer-motion";
 
 const FAQData = [
   {
-    question: "Can I upgrade or downgrade my plan at any time?",
+    question: "共创世界启动器 和 Gandi 客户端 有什么区别？",
     answer:
-      "Yes, you can easily upgrade or downgrade your plan at any time. Simply navigate to the account settings in your dashboard and choose the desired plan. The changes will be reflected immediately, and any adjustments in pricing will be applied on your next billing cycle. Our support team is more than happy to provide guidance and recommendations.",
+      "共创世界启动器采用 Tauri + WebView2 技术栈，是对所导入的作品的整合，可以帮助你快速创建及开发作品，且不会限制性能；而 Gandi 客户端采用基于类浏览器的 Electron 框架，会主动限制资源占用，且只是将 Gandi 嵌入本地并作优化。",
   },
   {
-    question: "How to claim your 25% discount offer?",
+    question: "共创世界启动器是共创世界官方出品的吗？",
     answer:
-      "To claim your 25% discount, simply sign up for an account and enter the promotional code at checkout. The discount will be applied automatically to your purchase.",
+      "不是，共创世界启动器是 Gandi 爱好者们自发编写的，但我们的开发标准绝对等于或大于官方客户端的标准，且支持跟随官方热更新。",
   },
   {
-    question: "What's your refund policy?",
+    question: "共创世界启动器会断更吗？",
     answer:
-      "We offer a 30-day money-back guarantee on all our plans. If you're not satisfied with our product, simply contact our support team within 30 days of purchase for a full refund.",
+      `只要共创世界还存在，我们就不会停止维护，欢迎点击右上角的"源代码"按钮给我们提 Issues（问题及需求）和 PR`,
   },
   {
-    question: "How to get support for the product?",
+    question: "共创世界启动器的开发者有哪些？",
     answer:
-      "Our dedicated support team is here to help. You can reach out to us through the contact form on our website, send an email, or engage with us via live chat. We'll be happy to assist you with any questions or concerns you may have",
+      `共创世界启动器的主要开发者是 @白猫 ，后来 @多bug的啸天犬 也参与了部分功能的制作，自动签到功能由 @酷可MC 提供支持`,
   },
 ];
 
@@ -35,9 +35,9 @@ export const FAQ = () => (
     >
       <div className="relative z-10 container px-2 sm:px-8 lg:px-4 mx-auto w-11/12 sm:w-full">
         <div className="md:max-w-4xl mx-auto">
-          <p className="mb-7 block-subtitle text-center">Have any questions?</p>
+          <p className="mb-7 block-subtitle text-center">有很多问题？</p>
           <h2 className="mb-16 block-big-title text-center">
-            Frequently Asked Questions
+            这些问题，你也有吗？
           </h2>
           <div className="mb-11 flex flex-wrap -m-1">
             {FAQData.map((item, index) => (
